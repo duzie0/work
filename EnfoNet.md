@@ -140,24 +140,12 @@ ProtoBuf 效率高的原因
 
 架构五要素：
 
-最后，结合架构核心的五要素来回顾下我们在搭建Docker微服务架构使用的技术体系：
+**高性能**：消息队列、RxJava异步并发、分布式缓存、本地缓存、Http的Etag缓存、使用Elasticsearch优化查询、CDN等
 
-高性能
+**可用性：**容器服务集群、RxJava的熔断处理、服务降级、消息的幂等处理、超时机制、重试机制、分布式最终一致性等
 
-消息队列、RxJava异步并发、分布式缓存、本地缓存、Http的Etag缓存、使用Elasticsearch优化查询、CDN等等。
+**伸缩性：**服务器集群的伸缩、容器编排Kubernetes、数据库分库分表、Nosql的线性伸缩、搜索集群的可伸缩等
 
-可用性
+**扩展性：**基于Docker的微服务本身就是为了扩展性而生
 
-容器服务集群、RxJava的熔断处理、服务降级、消息的幂等处理、超时机制、重试机制、分布式最终一致性等等。
-
-伸缩性
-
-服务器集群的伸缩、容器编排Kubernetes、数据库分库分表、Nosql的线性伸缩、搜索集群的可伸缩等等。
-
-扩展性
-
-基于Docker的微服务本身就是为了扩展性而生！
-
-安全性
-
-JPA/Hibernate,SpringSecurity、高防IP、日志监控、Https、Nginx反向代理、HTTP/2.0等等。
+**安全性：**JPA/Hibernate,SpringSecurity、高防IP、日志监控、Https、Nginx反向代理、HTTP/2.0等
