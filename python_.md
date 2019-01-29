@@ -110,3 +110,20 @@ Pymalloc机制，为了加速Python的执行效率，Python引入了一个Pymall
 malloc机制，对于大的对象（大于256bits），直接执行 new/malloc 的行为来申请新的内存空间；
 
 私有内存池，对于Python对象，如整数，浮点数和list，都有其独立的私有内存池，对象间不共享他们的内存池。也就是说如果你分配又释放了大量的整数，用于缓存这些整数的内存就不能再分配给浮点数。
+
+#### 11. 代码中判断python版本
+
+```python
+import sys
+sys.version_info
+```
+
+```
+//major 即为python版本
+sys.version_info(major=3, minor=5, micro=4, releaselevel='final', serial=0)
+```
+
+#### 12. 内置方法（魔术方法）
+
+重写内置方法一般会改变对象的内部行为。
+
